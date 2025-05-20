@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skill Journal</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--...Starting From Here...-->
+
+<header class="app-header">
+  <div class="header-left">
+    <h1>📝 Skill Journal</h1>
+  </div>
+  <div class="header-center">
+    <h4>Keep track of the skills you’re learning...</h4>
+    <h4>Note your progress...</h4> 
+      <h4>Grow consistently - one step at a time...</h4>
+  </div>
+</header>
+
+<!--Skill Form Section-->
+
+<section class="skill-form-section">
+  <h2>Add a New Skill</h2>
+  <form id="skill-form">
+    <label for="skill-name">Skill Name:</label>
+    <input type="text" id="skill-name" required />
+
+    <label for="skill-level">Skill Level:</label>
+    <select id="skill-level" required>
+      <option value="">-- Select Level --</option>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Advanced">Advanced</option>
+    </select>
+
+    <label for="skill-notes">Notes (optional):</label>
+    <textarea id="skill-notes" rows="4" placeholder="Any notes..."></textarea>
+
+    <button type="submit">Add Skill</button>
+  </form>
+</section> 
+
+    <!--Section that is displaying My Skills-->
+
+<section class="skill-list-section">
+  <h2>My Skills :</h2>
+
+  <div class="filter-container">
+  <label for="filter">Filter by Level:</label>
+  <select id="filter">
+    <option value="All">All</option>
+    <option value="Beginner">Beginner</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Advanced">Advanced</option>
+  </select>
+  <label for="search">Search Skill:</label>
+  <input type="text" id="search" placeholder="Type skill name..." />
+
+  </div>
+
+  <div id="skill-list">
+    <!-- n all the Skill cards will appear here -->
+  </div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

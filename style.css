@@ -1,0 +1,369 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Styling Header */
+
+.app-header {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg, #ffffff);
+  color: var(--text-color, #000000);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title-block {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title-block h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-muted, #666);
+}
+
+#dark-mode-toggle {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--text-color, #000000);
+}
+
+.app-header h4{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Style for card title inside form */
+.add-skill {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+} 
+
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+} 
+
+/* Styling Skill Form Section */
+
+.skill-form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-form-section h2 {
+  margin-bottom: 15px;
+  color: #34495e;
+  font-size: 1.5rem;
+}
+
+#skill-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#skill-form input,
+#skill-form select,
+#skill-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#skill-form button {
+  margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#skill-form button:hover {
+  background-color: #2980b9;
+}
+
+.skill-list-section {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+/* Skill card Section */
+
+.skill-card {
+  background-color: #fff;
+  border-left: 5px solid #3498db;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.skill-card h3 {
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.skill-card p {
+  margin: 5px 0;
+}
+
+.date-added {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Styling Filter Dropdown */
+
+.filter-container {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.filter-container label {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.filter-container select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/*Styling Edit & Delete Button */
+
+.edit-btn,
+.delete-btn {
+  margin-top: 8px;
+  margin-right: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Edit button specific */
+.edit-btn {
+  background-color: #fd7e14;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e8590c;
+}
+
+/* Delete button specific */
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Badges for each level */
+.level-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 6px;
+  text-transform: capitalize;
+}
+
+/* Colors for each level */
+.level-badge.beginner {
+  background-color: #1e7521; /* Green */
+}
+
+.level-badge.intermediate {
+  background-color: #f4a734; /* Orange */
+}
+
+.level-badge.advanced {
+  background-color: #a75b56; /* Red */
+}
+
+#search {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Level badge styling */
+.level-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9em;
+}
+
+.level-badge.beginner {
+  background-color: #6c757d;
+}
+
+.level-badge.intermediate {
+  background-color: #17a2b8;
+}
+
+.level-badge.advanced {
+  background-color: #28a745;
+}
+
+/* Progress Bar */
+.progress-bar-wrapper {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 8px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.progress-beginner {
+  width: 33%;
+  background-color: #6c757d;
+}
+
+.progress-intermediate {
+  width: 66%;
+  background-color: #17a2b8;
+}
+
+.progress-advanced {
+  width: 100%;
+  background-color: #28a745;
+}
+
+/* Styling Toggle Button 
+   Default (Light Mode) */
+body {
+  background-color: #f4f4f4;
+  color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-card {
+  background: white;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Dark Mode Styles */
+
+
+
+.skill-card {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+button {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
